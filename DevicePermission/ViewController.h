@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    MyDeviceCamera = 0,
+    MyDevicePhotoAlbum,
+    MyDeviceMicophone,
+} MyDeviceType;
+
 @interface ViewController : UIViewController
 
 

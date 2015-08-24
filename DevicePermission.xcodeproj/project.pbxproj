@@ -14,6 +14,8 @@
 		1661CDE11B8AF89D00A43FCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1661CDE01B8AF89D00A43FCE /* Images.xcassets */; };
 		1661CDE41B8AF89D00A43FCE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1661CDE21B8AF89D00A43FCE /* LaunchScreen.xib */; };
 		1661CDF01B8AF89E00A43FCE /* DevicePermissionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1661CDEF1B8AF89E00A43FCE /* DevicePermissionTests.m */; };
+		1661CDFB1B8AF8B900A43FCE /* YHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1661CDFA1B8AF8B900A43FCE /* YHUtil.m */; };
+		1661CDFD1B8B05E300A43FCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1661CDFC1B8B05E300A43FCE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		1661CDE91B8AF89E00A43FCE /* DevicePermissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevicePermissionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1661CDEE1B8AF89E00A43FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1661CDEF1B8AF89E00A43FCE /* DevicePermissionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicePermissionTests.m; sourceTree = "<group>"; };
+		1661CDF91B8AF8B900A43FCE /* YHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHUtil.h; sourceTree = "<group>"; };
+		1661CDFA1B8AF8B900A43FCE /* YHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHUtil.m; sourceTree = "<group>"; };
+		1661CDFC1B8B05E300A43FCE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1661CDFD1B8B05E300A43FCE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		1661CDC71B8AF89D00A43FCE = {
 			isa = PBXGroup;
 			children = (
+				1661CDFC1B8B05E300A43FCE /* AVFoundation.framework */,
 				1661CDD21B8AF89D00A43FCE /* DevicePermission */,
 				1661CDEC1B8AF89E00A43FCE /* DevicePermissionTests */,
 				1661CDD11B8AF89D00A43FCE /* Products */,
@@ -85,6 +92,8 @@
 				1661CDD81B8AF89D00A43FCE /* AppDelegate.m */,
 				1661CDDA1B8AF89D00A43FCE /* ViewController.h */,
 				1661CDDB1B8AF89D00A43FCE /* ViewController.m */,
+				1661CDF91B8AF8B900A43FCE /* YHUtil.h */,
+				1661CDFA1B8AF8B900A43FCE /* YHUtil.m */,
 				1661CDDD1B8AF89D00A43FCE /* Main.storyboard */,
 				1661CDE01B8AF89D00A43FCE /* Images.xcassets */,
 				1661CDE21B8AF89D00A43FCE /* LaunchScreen.xib */,
@@ -221,6 +230,7 @@
 			files = (
 				1661CDDC1B8AF89D00A43FCE /* ViewController.m in Sources */,
 				1661CDD91B8AF89D00A43FCE /* AppDelegate.m in Sources */,
+				1661CDFB1B8AF8B900A43FCE /* YHUtil.m in Sources */,
 				1661CDD61B8AF89D00A43FCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevicePermission/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevicePermission/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
